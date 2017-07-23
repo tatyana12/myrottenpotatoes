@@ -1,0 +1,10 @@
+%h1= "Information about #{@movie.title}"
+
+%ul
+  %li= "Release Date: #{@movie.release_date}"
+  %li= "Rating: #{@movie.rating}"
+
+%h3 Description:
+%p#description= @movie.description
+
+= link_to 'Back to movie list', movies_path
